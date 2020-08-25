@@ -3,7 +3,7 @@
   "description": "A hyperscript helper for creating Slate documents.",
   "version": "0.58.8",
   "license": "MIT",
-  "repository": "git://github.com/ianstormtaylor/slate.git",
+  "repository": "git://github.com/lilt/slate.git",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -35,5 +35,5 @@
     "slate",
     "xml"
   ],
-  "gitHead": "280bb1fae056c2cdcb406523854679045d2a8264"
+  "gitHead": "5683dee3fad944418f25451c29b7fbd552354ea3"
 }
