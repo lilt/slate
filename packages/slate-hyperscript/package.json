@@ -1,7 +1,7 @@
 {
   "name": "@lilt/slate-hyperscript",
   "description": "A hyperscript helper for creating Slate documents.",
-  "version": "0.58.9",
+  "version": "0.58.10",
   "license": "MIT",
   "repository": "git://github.com/lilt/slate.git",
   "main": "dist/index.js",

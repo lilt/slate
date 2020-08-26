@@ -1,7 +1,7 @@
 {
   "name": "@lilt/slate-react",
   "description": "Tools for building completely customizable richtext editors with React.",
-  "version": "0.58.9",
+  "version": "0.58.10",
   "license": "MIT",
   "repository": "git://github.com/lilt/slate.git",
   "main": "dist/index.js",
