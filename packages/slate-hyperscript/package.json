@@ -17,10 +17,10 @@
     "is-plain-object": "^3.0.0"
   },
   "devDependencies": {
-    "slate": "^0.58.9"
+    "@lilt/slate": "^0.58.9"
   },
   "peerDependencies": {
-    "slate": ">=0.55.0"
+    "@lilt/slate": ">=0.55.0"
   },
   "umdGlobals": {
     "slate": "Slate"

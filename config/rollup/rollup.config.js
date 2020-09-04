@@ -23,7 +23,7 @@ function configure(pkg, env, target) {
   const isUmd = target === 'umd'
   const isModule = target === 'module'
   const isCommonJs = target === 'cjs'
-  const pkgFolder = pkg.name.replace('@lilt/', '');
+  const pkgFolder = pkg.name.replace('@lilt/', '')
   const input = `packages/${pkgFolder}/src/index.ts`
   const deps = []
     .concat(pkg.dependencies ? Object.keys(pkg.dependencies) : [])
@@ -83,35 +83,14 @@ function configure(pkg, env, target) {
       include: [`packages/${pkgFolder}/src/**`],
       extensions: ['.js', '.ts', '.tsx'],
       presets: [
+        '@babel/preset-env',
         '@babel/preset-typescript',
-        [
-          '@babel/preset-env',
-          isUmd
-            ? { modules: false }
-            : {
-                exclude: [
-                  '@babel/plugin-transform-regenerator',
-                  '@babel/transform-async-to-generator',
-                ],
-                modules: false,
-                targets: {
-                  esmodules: isModule,
-                },
-              },
-        ],
         '@babel/preset-react',
       ],
       plugins: [
-        [
-          '@babel/plugin-transform-runtime',
-          isUmd
-            ? {}
-            : {
-                regenerator: false,
-                useESModules: isModule,
-              },
-        ],
-        '@babel/plugin-proposal-class-properties',
+        '@babel/plugin-transform-runtime',
+        '@babel/proposal-class-properties',
+        '@babel/plugin-proposal-object-rest-spread',
       ],
     }),
 
